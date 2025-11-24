@@ -1,1 +1,0 @@
-/home/segelfartyg/.bash_logout
