@@ -5,7 +5,9 @@
     // "width": 1280, // Waybar width
     "spacing": 8, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": [],
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
     "modules-center": [
         "clock"
     ],
@@ -27,22 +29,21 @@
 //        "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "sort-by-number": true
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,

@@ -45,7 +45,25 @@ margin-right: 10px;
     border-bottom: 3px solid white;
 }
 
-#clock {
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    background-color: #64727d;
+}
+
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#workspaces button.hover{
+    background-color: #404040;
 }
 
 #battery {
