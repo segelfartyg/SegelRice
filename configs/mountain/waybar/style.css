@@ -1,13 +1,14 @@
 * {
     border: none;
     border-radius: 0;
-    font-family:"LilexNerdFont";
+    font-family:"Symbols Nerd Font";
     font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(43, 48, 59, 0.25);
+    font-family: "HackNerdFontMono";
+    background: rgba(43, 48, 59, 0);
     border-bottom: 1px solid rgba(100, 114, 125, 0.25);
     color: white;
 }
@@ -20,18 +21,35 @@ tooltip label {
   color: white;
 }
 
+/* -----------------------------------------------------
+ * Workspaces
+ * ----------------------------------------------------- */
+
+ #workspaces {
+    margin: 3px 7px 3px 3px;
+    border: 0px;
+    font-size: 14px;
+    color: red;
+}
+
 #workspaces button {
-    padding: 0 5px;
-    background: transparent;
+    border: 0px;
+    margin:4px 5px 4px 0px;
+    padding:0px 4px 0px 4px;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+#workspaces button.active {
+    color: black;
+    background: rgb(91, 175, 91);
+}
+
+#workspaces button:hover {
     color: white;
-    border-bottom: 3px solid transparent;
+    background: grey;
+    border-radius: 15px;
 }
-
-#workspaces button.focused {
-    background: #64727D;
-    border-bottom: 3px solid white;
-}
-
 mode, #clock, #battery {
     padding: 0 20px;
 }
@@ -43,27 +61,6 @@ margin-right: 10px;
 #mode {
     background: #64727D;
     border-bottom: 3px solid white;
-}
-
-
-#workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
-    border-radius: 5px;
-}
-
-#workspaces button.active {
-    background-color: #64727d;
-}
-
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
-}
-
-#workspaces button.hover{
-    background-color: #404040;
 }
 
 #battery {
