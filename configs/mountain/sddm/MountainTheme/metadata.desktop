@@ -1,0 +1,17 @@
+[SddmGreeterTheme]
+Name=MountainTheme
+Description=Custom SDDM theme for Mountain rice (based on Dracula-Plasma6)
+Author=Eliver Lara
+Copyright=(c) 2024, Eliver Lara
+License=GPL 3+
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/EliverLara/Ant-Dracula/tree/master/kde/sddm
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=eliverlara@gmail.com
+Theme-Id=MountainTheme
+Theme-API=2.0
+QtVersion=6
