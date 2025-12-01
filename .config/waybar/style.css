@@ -8,17 +8,17 @@
 
 window#waybar {
     font-family: "HackNerdFontMono";
-    background: rgba(43, 48, 59, 0);
-    border-bottom: 1px solid rgba(100, 114, 125, 0.25);
-    color: white;
+    background: linear-gradient(90deg, rgba(30, 41, 59, 0.95), rgba(51, 65, 85, 0.95));
+    border-bottom: 2px solid rgba(147, 197, 253, 0.5);
+    color: #e0f2fe;
 }
 
 tooltip {
-  background: rgba(43, 48, 59, 0.5);
-  border: 1px solid rgba(100, 114, 125, 0.5);
+  background: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(147, 197, 253, 0.5);
 }
 tooltip label {
-  color: white;
+  color: #e0f2fe;
 }
 
 /* -----------------------------------------------------
@@ -29,42 +29,51 @@ tooltip label {
     margin: 3px 7px 3px 3px;
     border: 0px;
     font-size: 14px;
-    color: red;
+    color: #7dd3fc;
 }
 
 #workspaces button {
     border: 0px;
     margin:4px 5px 4px 0px;
     padding:0px 4px 0px 4px;
-    color: black;
+    color: #e0f2fe;
+    background: rgba(51, 65, 85, 0.6);
     transition: all 0.5s ease-in-out;
 }
 
 #workspaces button.active {
-    color: black;
-    background: rgb(91, 175, 91);
+    color: #0c4a6e;
+    background: linear-gradient(135deg, #7dd3fc, #38bdf8);
+    font-weight: bold;
 }
 
 #workspaces button:hover {
-    color: white;
-    background: grey;
+    color: #0c4a6e;
+    background: #bae6fd;
     border-radius: 15px;
 }
 mode, #clock, #battery {
     padding: 0 20px;
+    color: #e0f2fe;
+}
+
+#clock {
+    background: rgba(71, 85, 105, 0.5);
+    font-weight: bold;
 }
 
 #network {
-margin-right: 10px;
-} 
+    margin-right: 10px;
+    color: #7dd3fc;
+}
 
 #mode {
-    background: #64727D;
-    border-bottom: 3px solid white;
+    background: #475569;
+    border-bottom: 3px solid #7dd3fc;
 }
 
 #battery {
-    color: black;
+    color: #e0f2fe;
 }
 
 #battery.charging {
