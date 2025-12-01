@@ -1,0 +1,89 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family:"Symbols Nerd Font";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    font-family: "HackNerdFontMono";
+    background: rgba(43, 48, 59, 0);
+    border-bottom: 1px solid rgba(100, 114, 125, 0.25);
+    color: white;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+/* -----------------------------------------------------
+ * Workspaces
+ * ----------------------------------------------------- */
+
+ #workspaces {
+    margin: 3px 7px 3px 3px;
+    border: 0px;
+    font-size: 14px;
+    color: red;
+}
+
+#workspaces button {
+    border: 0px;
+    margin:4px 5px 4px 0px;
+    padding:0px 4px 0px 4px;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+#workspaces button.active {
+    color: black;
+    background: rgb(91, 175, 91);
+}
+
+#workspaces button:hover {
+    color: white;
+    background: grey;
+    border-radius: 15px;
+}
+mode, #clock, #battery {
+    padding: 0 20px;
+}
+
+#network {
+margin-right: 10px;
+} 
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#battery {
+    color: black;
+}
+
+#battery.charging {
+    color: white;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
