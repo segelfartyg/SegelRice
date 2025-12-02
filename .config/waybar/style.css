@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family:"Symbols Nerd Font";
+    font-family:"HackNerdFontMono";
     font-size: 13px;
     min-height: 0;
 }
@@ -26,7 +26,6 @@ tooltip label {
  * ----------------------------------------------------- */
 
  #workspaces {
-    margin: 3px 7px 3px 3px;
     border: 0px;
     font-size: 14px;
     color: red;
