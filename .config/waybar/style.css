@@ -18,7 +18,7 @@ window#waybar {
 .modules-center,
 .modules-right
 {
-    background: rgba(0, 0, 8, .7);
+    background: linear-gradient(120deg, rgb(112, 0, 52) 0%, rgb(141, 0, 35) 50%,rgb(122, 0, 20) 100%);
     margin: 5px 10px;
     padding: 0 5px;
     border-radius: 15px;
@@ -103,5 +103,5 @@ window#waybar {
     transition: color .5s;
 }
 #custom-arch:hover {
-    color: #1793d1;
+    color: #64003e;
 }
