@@ -7,6 +7,8 @@
 
 window#waybar {
     background: rgba(26, 27, 38, 0.75);
+    background: linear-gradient(120deg, rgba(82, 3, 40, 0.486) 0%, rgba(82, 3, 40, 0.521) 50%,rgba(82, 3, 40, 0.603) 100%);
+
     color: #c0caf5;
     font-family: 
         SpaceMono Nerd Font,
@@ -18,7 +20,7 @@ window#waybar {
 .modules-center,
 .modules-right
 {
-    background: linear-gradient(120deg, rgb(112, 0, 52) 0%, rgb(141, 0, 35) 50%,rgb(122, 0, 20) 100%);
+    background: linear-gradient(120deg, rgb(112, 0, 52) 0%, rgb(141, 0, 35) 50%,rgba(122, 0, 20, 0.459) 100%);
     margin: 5px 10px;
     padding: 0 5px;
     border-radius: 15px;
