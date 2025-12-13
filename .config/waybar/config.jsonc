@@ -22,7 +22,8 @@
         "hyprland/language",
         "battery",
         "battery#bat2",
-        "clock"
+        "clock",
+        "custom/power"
     ],
     //Modules configuration
 
