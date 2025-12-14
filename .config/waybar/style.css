@@ -22,8 +22,9 @@ window#waybar {
 {
     background: linear-gradient(120deg, rgb(112, 0, 52) 0%, rgb(141, 0, 35) 50%,rgba(122, 0, 20, 0.459) 100%);
     margin: 5px 10px;
-    padding: 5px 5px;
+    /* padding: 5px px; */
     border-radius: 15px;
+    font-size: 16px;
 }
 .modules-left {
     padding: 0;
@@ -104,8 +105,23 @@ window#waybar {
     font-size: 25px;
     transition: color .5s;
 }
+
+#custom-power{
+    font-size: 26px;
+    padding: 0 20px;
+    margin:0; 
+    transition: 0.5s;
+}
+
+#custom-power:hover{
+    color: #64003e;
+}
 #custom-arch:hover {
     color: #64003e;
+}
+
+#power{
+ font-size: 26px;
 }
 
 menu {
