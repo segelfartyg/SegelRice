@@ -72,7 +72,8 @@ window#waybar {
 #scratchpad:hover,
 #power-profiles-daemon:hover,
 #language:hover,
-#mpd:hover {
+#mpd:hover, 
+#custom-power:hover{
     background: rgba(26, 27, 38, 0.9);
 }
 
@@ -111,13 +112,7 @@ window#waybar {
     padding: 0 20px;
     margin:0; 
     transition: 0.5s;
-}
-
-#custom-power:hover{
-    color: #64003e;
-}
-#custom-arch:hover {
-    color: #64003e;
+     border-radius: 15px;
 }
 
 #power{
