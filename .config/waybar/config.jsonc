@@ -13,8 +13,8 @@
     ],
     "modules-right": [
 //        "mpd",
-//        "idle_inhibitor",
-//        "pulseaudio",
+  //     "idle_inhibitor",
+       "pulseaudio",
         "network",
 //        "power-profiles-daemon",
 //        "cpu",
@@ -24,9 +24,9 @@
 //        "keyboard-state",
         "hyprland/language",
         "battery",
-        "battery#bat2"
+        "battery#bat2",
 //        "tray"
-//        "custom/power"
+       "custom/power"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -42,6 +42,8 @@
       "default": ""
     }
 },
+
+
     "persistent-workspaces": {
       "*": 5
     },
@@ -136,7 +138,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}% <span rise='1500'>{icon}</span>",
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
@@ -161,7 +163,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ",
+        "format-wifi": "{essid} <span rise='1500'></span>",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
@@ -170,11 +172,11 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% <span rise='1000'>{icon}</span> {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": "{volume}% <span rise='1500'></span>",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
@@ -205,7 +207,7 @@
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
-			"shutdown": "shutdown",
+			"shutdown": "shutdown now",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
