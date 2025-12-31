@@ -82,6 +82,7 @@ margin-right: 10px;
     }
 }
 
+
 #battery.warning:not(.charging) {
     background: #f53c3c;
     color: white;
