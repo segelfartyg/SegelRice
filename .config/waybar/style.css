@@ -1,97 +1,38 @@
 * {
-    /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    transition: background-color .3s ease-out;
+    font-family: AurulentSansM Nerd Font, FontAwesome;
+    font-size: 13px;
 }
 
 window#waybar {
-    background: rgba(26, 27, 38, 0.75);
-    background: linear-gradient(120deg, rgba(0, 125, 228, 0) 0%, rgba(0, 125, 228, 0)   50%,rgba(0, 125, 228, 0)   100%);
-
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.750) 0%, rgba(0, 0, 0, 0.750)  50%,rgba(0, 0, 0, 0.750)   100%);
     color: #c0caf5;
-    font-family: 
-        SpaceMono Nerd Font,
-        feather;
     transition: background-color .5s;
+    font-family:  Nerd Font, FontAwesome
 }
 
-.modules-left,
-.modules-center,
-.modules-right
-{
-    background: linear-gradient(120deg, rgb(112, 0, 52) 0%, rgb(141, 0, 35) 50%,rgba(122, 0, 20, 0.459) 100%);
-    margin: 5px 10px;
-    /* padding: 5px px; */
-    border-radius: 15px;
-    font-size: 16px;
-}
 .modules-left {
-    padding: 0;
+    padding-left: 15px;
 }
-.modules-center {
-    padding: 0 10px;
-}
-
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#language,
-#mpd {
-    padding: 0 10px;
-    border-radius: 15px;
+.modules-right {
+    padding-right: 15px;
 }
 
-#clock:hover,
-#battery:hover,
-#cpu:hover,
-#memory:hover,
-#disk:hover,
-#temperature:hover,
-#backlight:hover,
-#network:hover,
-#pulseaudio:hover,
-#wireplumber:hover,
-#custom-media:hover,
-#tray:hover,
-#mode:hover,
-#idle_inhibitor:hover,
-#scratchpad:hover,
-#power-profiles-daemon:hover,
-#language:hover,
-#mpd:hover, 
 #custom-power:hover{
-    background: rgba(26, 27, 38, 0.9);
+    transition: 0.25s;
+    color: rgba(116, 0, 0, 0.9);
 }
 
+#workspaces{
+    margin-left: 15px;
+}
 
 #workspaces button {
-  background: transparent;
-  font-family:
-    SpaceMono Nerd Font,
-    feather;
-  font-weight: 900;
-  font-size: 13pt;
-  color: #c0caf5;
-  border:none;
-  border-radius: 15px;
+transition: 0.25s
 }
 
 #workspaces button.active {
-    background: #13131d; 
+    background: radial-gradient(closest-side, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
+    border-radius: 50px;
 }
 
 #workspaces button:hover {
@@ -101,29 +42,11 @@ window#waybar {
 }
 
 #custom-arch {
-    margin-left: 5px;
-    padding: 0 10px;
-    font-size: 25px;
-    transition: color .5s;
-}
-
-#custom-power{
-    font-size: 26px;
-    padding: 0 20px;
-    margin:0; 
-    transition: 0.5s;
-     border-radius: 15px;
-}
-
-#power{
- font-size: 26px;
+    font-size: 20px;
 }
 
 menu {
 	border-radius: 15px;
 	background: #161320;
 	color: #B5E8E0;
-}
-menuitem {
-	border-radius: 15px;
 }

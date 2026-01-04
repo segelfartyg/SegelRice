@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sink1="alsa_output.usb-RODE_Microphones_RODE_NT-USB-00.analog-stereo"
-sink2="alsa_output.usb-Focusrite_Scarlett_2i2_USB-00.HiFi__Line1__sink"
+sink2="alsa_output.usb-Focusrite_Scarlett_2i2_USB-00.HiFi__Line__sink"
 
 # Get current default sink
 current=$(pactl get-default-sink)
